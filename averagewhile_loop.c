@@ -13,7 +13,8 @@ while(valsread>0)
 	printf("READ %d\n",value); //this prints out the value entered
 	valsread=value; //this equates forces valuesread to be equal to value
 	if(valsread!=0){  //this checks if the value is equal to 0
-	valsread=scanf("%d",&value); //this takes another data for value if it's not equal to 0
+	valsread=scanf("%d",&value);//this takes another data for value if it's not equal to 0
+	valsread=value;			    
 	}
 	
 }

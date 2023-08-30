@@ -1,6 +1,8 @@
 #include<stdio.h>
 int value,valsread,total,numberofvals;
 float average;
+char ends[]="stop";
+char end[4444];
 int main(void)
 {
 printf("pick a set of numbers (0 to cancel the program)");
@@ -13,8 +15,10 @@ for(valsread;valsread>0;numberofvals++)
 	if(valsread!=0)
 	{
 	printf("put in another value:(0 to cancel the program)");
-	valsread=scanf("%d",&value);
+	valsread=scanf("%d%s",&value,&end);
 	valsread=value;
+	
+	if(end=ends){}
 	}
 }
 average=total / (float)numberofvals;
